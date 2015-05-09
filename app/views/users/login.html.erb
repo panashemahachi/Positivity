@@ -1,0 +1,28 @@
+<!--<%= image_tag @user['picture']['data']['url'].to_s %>-->
+<div class="container">
+<center><h2><%= @user['name'] %></h2></center>
+
+<div class="row">
+<div class="profile-header-container" style="margin-top:-25px">   
+    		<div class="profile-header-img">
+                <%= image_tag(@pic.to_s, class: 'img-circle"')%>
+                <!-- badge -->
+                <div class="rank-label-container">
+                    <span class="label label-default rank-label"><%= @user_score_description%></span>
+                </div>
+            </div>
+        </div> 
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<h1 class="pink-headline text-center">Your Score</h1>
+<h1 class="pink-headline text-center"><%= @user_score.round(2) %></h1>
+</div>
+</div>
+<h3 class="pink-headline text-center">Best Post</h3>
+<blockquote><p class="rated-post text-center"><%= @best_post %></p></blockquote>
+
+<h3 class="pink-headline text-center">Worst Post</h3>
+<blockquote><p class="rated-post text-center"><%= @worst_post %></p></blockquote>
+</div>

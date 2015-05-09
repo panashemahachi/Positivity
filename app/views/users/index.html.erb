@@ -1,0 +1,30 @@
+<!--<%= link_to "Facebook Login", '/auth/facebook' %> -->
+<div class="home">
+
+	<div class="container">
+
+		<div class="row">
+		<center> <%= image_tag('logo.png', class: 'img-responsive logo')%> </center>
+		</div>
+		<div class="row">
+			<center>	<!--<h3 id="tagline">curate, learn, follow</h3> -->
+				<h3 id="tagline">find out how "nice" you really are</h3>
+
+				<%= button_to '/auth/facebook', class: 'btn btn-custom' do %>
+				<%= fa_icon "facebook", style: 'padding-right:2px' %> Check out your rating
+				<% end %></center>
+			</div>
+		</div>
+
+			<footer class="footer">
+      <div class="container">
+        <h6 class="text-muted text-center">Made with care</h6>
+      </div>
+    </footer>
+
+
+	</div>
+
+	<div class="spinning">
+	<%= image_tag('spinning.gif', class: 'img-responsive') %>
+	</div>

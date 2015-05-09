@@ -1,0 +1,7 @@
+development:
+  app_id: 1020471391310610
+  secret: fa67bd893841aefa8a69b537a0256aff
+
+production:
+  app_id: 1020471391310610
+  secret: fa67bd893841aefa8a69b537a0256aff
