@@ -15,18 +15,3 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
-
-var ready;
-ready = function() {
-$(function () {
-  $('button').on('click', function(){
-  	$('.home').removeClass();
-  	$('.spinning').css('display', 'block');
-
-  });
-
-
-};
-
-$(document).ready(ready);
-$(document).on('page:load', ready);
