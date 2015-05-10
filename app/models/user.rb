@@ -78,8 +78,10 @@ class User < ActiveRecord::Base
 		score_description = "Really Nice"
 	elsif user_score < 9.5
 		score_description = "Extremely Nice"
-	else
+	elsif user_score <= 10
 		score_description = "Everyone's BFF"
+	else
+		score_description = "Unknown"
 	end
 
 	return_arr[0] = user_score
