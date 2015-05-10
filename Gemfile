@@ -34,3 +34,5 @@ gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 
 gem "font-awesome-rails"
+
+gem 'google-analytics-rails'
